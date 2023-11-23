@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Slider Polygon</title>
+</head>
+<body>
+    <div class="main h-screen overflow-hidden  w-full flex justify-center items-start p-2 ">
+        <div class="h-1/5 w-full  relative flex justify-center items-center sm:h-1/3 lg:h-1/2" style="background: #228e6863;">
+              <div class="slider  w-full h-full relative  z-30" >
+                    <div style="--index:1" class="" data-type="0"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ9TiOaNMCNV09dw2Rgs31pIcm816ejfC5ccrIHtx_59JuE_cgbVY-1b8Fmt4fNKVZGIo&usqp=CAU" alt=""><div class="card">1</div></div>
+                    <div style="--index:2" class="" data-type="1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQMRM-U8YaTuk5wkB4AyG7U3PYuFcebOS8gDpx6ohUiLeesFUyilmPDk9jO1YQiZ2XVc&usqp=CAU" alt=""><div class="card">2</div></div>
+                    <div style="--index:3" class="" data-type="2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4jI8zRJK4cxqqEx186hMX696VM7Z8-30fLxJWH3oWJmTPKrxjOxfKdcKdrDIKf5ZWpM&usqp=CAU" alt=""><div class="card">3</div></div>
+                    <div style="--index:4" class="" data-type="3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRuziD0PnQBvdoDHzjmbNLoGgQPZVDqQ8lEMsORFixIUpsMKtBJPQxzuvxYfz6nNci3g&usqp=CAU" alt=""><div class="card">4</div></div>
+                    <div style="--index:5" class="" data-type="4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ9TiOaNMCNV09dw2Rgs31pIcm816ejfC5ccrIHtx_59JuE_cgbVY-1b8Fmt4fNKVZGIo&usqp=CAU" alt=""><div class="card">1</div></div>
+                    <div style="--index:6" class="" data-type="5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQMRM-U8YaTuk5wkB4AyG7U3PYuFcebOS8gDpx6ohUiLeesFUyilmPDk9jO1YQiZ2XVc&usqp=CAU" alt=""><div class="card">2</div></div>
+                    <div style="--index:7" class="" data-type="6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4jI8zRJK4cxqqEx186hMX696VM7Z8-30fLxJWH3oWJmTPKrxjOxfKdcKdrDIKf5ZWpM&usqp=CAU" alt=""><div class="card">3</div></div>
+                    <div style="--index:8" class="" data-type="7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRuziD0PnQBvdoDHzjmbNLoGgQPZVDqQ8lEMsORFixIUpsMKtBJPQxzuvxYfz6nNci3g&usqp=CAU" alt=""><div class="card">4</div></div>
+
+              </div>
+              <div class="controls flex justify-between w-full absolute px-2 bg-amber-400 z-20 sm:z-0 sm:px-10" >
+                  <span onclick="back()" class="w-5 h-5 bg-slate-300 flex justify-center items-center rounded-full sm:w-7 sm:h-7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-4 h-4 lg:w-8 lg:h-8">
+            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+          </svg></span>
+                  <span onclick="front()" class="w-5 h-5 bg-slate-300 flex justify-center items-center rounded-full sm:w-7 sm:h-7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-4 h-4 lg:w-8 lg:h-8 	" >
+            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+          </svg></span>
+              </div>
+        </div>
+          
+      </div>
+    <script src="./script.js"></script>
+</body>
+</html>
